@@ -2,7 +2,6 @@
   "name": "comp229.013.f2022",
   "version": "1.0.0",
   "description": "COMP229.018 Code Example",
-
   "scripts": {
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +24,8 @@
   },
   "homepage": "https://github.com/UdaySidhu625/COMP229.013.F2022#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "bootstrap": "^5.2.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
