@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "COMP229.018 Code Example",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "mongoose": "^6.6.5",
     "morgan": "~1.9.1"
   }
 }
