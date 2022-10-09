@@ -1,18 +1,39 @@
+/*
+File Name : style.css 
+Name : Uday Partap Singh Sidhu
+Student Id : 301237202
+Date : October 8,2022
+*/
+
+*
+{
+	box-sizing: border-box;
+	margin:0;
+}
+
+.shadow
+{
+	box-shadow: 4px 4px 30px #000000;
+	
+}
+
 body {
   
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
   
 }
 .formcontainer
 	{
 		margin:auto;
-		width:70%;
+		width:50%;
 		border:2.5px solid #000000;
-		margin-top:100px;
+		margin-top:40px;
 		font-size:25px;	
 		border-radius:40px;
 		padding:50px;
 		background-color:#7ddbde;
+		
 	}
   .input
 	{
@@ -34,7 +55,7 @@ body {
 	float:left;
 	border-radius: 100%;
 	margin-left:40px;
-	margin-top: 40px;
+	margin-top: 0px;
   }
   .set
   {
@@ -46,7 +67,7 @@ body {
   {
 	margin-top:180px;
 	margin-left:40px;
-	color:#28A745;
+	color:#D4DF38;
   }
   .set3
   {
@@ -84,26 +105,172 @@ a {
 
 .indiv1
 {
-	background-color: #5CDB95;
-		width:45%;
+	background-color: #ffffff;
+		width:25%;
 	float:left;
 	margin:20px;
-	margin-left: 50px;
-	border-radius: 10%;
-	height:650px;
+	margin-left: 60px;
+	height:750px;
+	box-shadow: 2px 2px 10px #000000;
+	margin-top: 40px;
+	
 }
 
 .indiv2
 {
-	background-color: #5CDB95;
-	width:45%;
+	background-color: #ffffff;
+		width:25%;
 	float:left;
-	margin-left:40px;
-	margin-top:20px;
-	border-radius: 10%;
-	height:650px;
+	margin:20px;
+	margin-left: 50px;
+	height:750px;
+	box-shadow: 2px 2px 10px #000000;
+	margin-top: 40px;
+}
+
+.indiv3
+{
+	background-color: #ffffff;
+		width:25%;
+	float:left;
+	margin:20px;
+	margin-left: 50px;
+	height:750px;
+	box-shadow: 2px 2px 10px #000000;
+	margin-top: 40px;
+}
+
+.indiv4
+{
+	background-color: #ffffff;
+		width:25%;
+	float:left;
+	margin:20px;
+	margin-left: 60px;
+	height:750px;
+	box-shadow: 2px 2px 10px #000000;
+	margin-top: 20;
 
 }
+.ip{
+ text-align: center;
+ margin-right:180px;
+ color:#343A40;
+ margin-right: 10px;
+}
+.right
+{
+	float:right;
+	background-color: #D4DF38;
+	width:30%;
+}
+.ip1{
+	text-align: right;
+	margin-right:180px;
+	color:#e5e5e5
+}
+
+
+.pstyle
+{
+	color:#000000;
+	padding:20px;
+	font-size: 20px;
+}
+.indiv6
+{
+	margin-top: 70px;
+	margin-left: 1180px;
+	width:30%;
+	
+}
+.pstyle2
+{
+	color:#000000;
+	margin-top: -15px;
+	padding:20px;
+	font-size: 30px;
+}
+.bmark
+{
+	width:10%;
+	background-color: #D4DF38;
+	height: 1600px;
+	float:left;
+	
+}
+.ulstyle
+{
+	font-size: 20px;
+	padding-left:25px;
+}
+.div7
+{
+	width: 800px;;
+	height: 80px;
+	background-color: #D4DF38;
+	margin-left: 400px;
+	padding:1px 5px 5px 25px;
+	
+	margin-top:20px;
+}
+.sdiv
+{
+	float:left;
+	margin-top:40px;
+	width:25%;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 10px #000000;
+	margin-left:60px;
+	height:300px;
+	border-radius: 10px;
+	padding:10px;
+}
+.bmark2
+{
+	width:10%;
+	background-color: #D4DF38;
+	height: 1800px;
+	float:left;
+	
+}
+
+.pstyle3
+{
+	color:#000000;
+	font-size: 20px;
+}
+.sdiv:hover{
+	background-color: #83cce3;
+	
+	
+}
+.pstyle3:hover{
+	color: #ffffff;
+	
+}
+.infodiv
+{
+	width:15%;
+	margin-right: 1050px;
+	float:right;
+	margin-top: 40px;
+}
+.infop
+{
+	font-size: 20px;
+}
+.bmark3
+{
+	width:10%;
+	background-color: #D4DF38;
+	height: 780px;
+	float:left;
+	
+}
+
+
+
 	
 	
 
