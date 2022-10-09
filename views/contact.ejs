@@ -1,4 +1,23 @@
 <%- include partials/header.ejs %>
+
+<div class="bmark2" style="float:left">
+  <h2 style="padding-left:10px;">Contact</h2>
+  <ul class="ulstyle">
+    <li>
+      Information
+    </li>
+
+    <li>
+      Complaint
+    </li>
+
+    <li>
+      Query
+    </li>
+      
+
+  </ul>
+</div>
 <div class="formcontainer">
 			
   <h3 align="center">Contact</h3>
@@ -7,27 +26,62 @@
   
   <form name="registration" id="registration" align="center">
   
+    <article>
+        
+      <form id="formOfRegistration">
+          <fieldset class="Regform">
+              
+
+              <label for="firstname">First Name:</label></br>
+              <input type="text" id="firstname" class="input"/></br>
+              <p id="errorFirstName" class="msgError" style="color:red"></p></br>
+
+              <label for="lastname">Last Name:</label></br>
+              <input type="text" id="lastname" class="input"/></br>
+              <p id="errorLastName" class="msgError" style="color:red"></p></br>
+
+              <label for="age">Age:</label></br>
+              <input type="text" id="age" class="input"/></br>
+              <p id="errorAge" class="msgError" style="color:red"></p></br>
+
+              <label for="addressOfmember">Address:</label></br>
+              <input type="text" id="addressOfmember" class="input"/></br>
+              <p id="errorAddress" class="msgError" style="color:red"></p></br>
+
+              <label for="zipcode">Postal Code:</label></br>
+              <input type="text" id="zipcode" class="input"/></br>
+              <p id="errorPostalCode" class="msgError" style="color:red"></p></br>
+
+              <label for="city">City:</label></br>
+              <input type="text" id="city" class="input"/></br>
+              <p id="errorOfCity" class="msgError" style="color:red"></p></br>
+              
+              <label for="email">Email:</label></br>
+              <input type="email" id="email" class="input"/></br>
+              <p id="errorEmail" class="msgError" style="color:red"></p></br>
+
+              <label for="province">Province:</label></br>
+              <input type="text" id="province" class="input"/></br>
+              <p id="errorProvince" class="msgError" style="color:red"></p></br>
+
+              <label for="passwordfirst">Query</label></br>
+              <input type="password" id="passwordfirst" class="input"/></br>
+              
+              <p id="errorPassword" class="msgError" style="color:red"></p></br>
+
+
+              <div class="buttons">
+                  <input type="button" id="btnSubmit" value="Submit Info" />
+                  <input type="button" id="btnClear" value="Clear Form" /></br>
+              </div>  
+              <p>© Uday Partap Singh Sidhu</p>
+          </fieldset>
+      </form>
   
-    <label for="name">Name</label></br>
-    <input type="text" name="name" class="input" id="name"></br>
-    
-    <label for="contactno">Contact Number</label></br>
-    <input type="text" name="contactno" class="input" id="contactno"></br>
-    
-    <label for="secondary">Secondary Contact Number</label></br>
-    <input type="text" name="secondary" class="input" id="secondary"></br>
-    
-    <label for="emailid">Email Address</label></br>
-    <input type="text" name="emailid" class="input" id="emailid"></br>
-    
-    <label for="password">Password</label></br>
-    <input type="text" name="password" class="input" id="password"></br>
-    
-    <label for="address">Address</label></br>
-    <textarea type="text" name="address" class="input" id="address"></textarea></br>
-  
-  <input type="submit" name="submit" class="input" id="submit" class="btnsubmit">
+  </article>
   
   </form>
 </div>
+
+<script src="./javascripts/contact.js"></script>
 <%- include partials/footer.ejs %>
