@@ -110,7 +110,7 @@ a {
 	float:left;
 	margin:20px;
 	margin-left: 60px;
-	height:750px;
+	height:780px;
 	box-shadow: 2px 2px 10px #000000;
 	margin-top: 40px;
 	
@@ -123,7 +123,7 @@ a {
 	float:left;
 	margin:20px;
 	margin-left: 50px;
-	height:750px;
+	height:780px;
 	box-shadow: 2px 2px 10px #000000;
 	margin-top: 40px;
 }
@@ -135,7 +135,7 @@ a {
 	float:left;
 	margin:20px;
 	margin-left: 50px;
-	height:750px;
+	height:780px;
 	box-shadow: 2px 2px 10px #000000;
 	margin-top: 40px;
 }
@@ -180,8 +180,9 @@ a {
 .indiv6
 {
 	margin-top: 70px;
-	margin-left: 1180px;
-	width:30%;
+	margin-left: 1110px;
+	width:25%;
+	
 	
 }
 .pstyle2
@@ -195,7 +196,7 @@ a {
 {
 	width:10%;
 	background-color: #D4DF38;
-	height: 1600px;
+	height: 1650px;
 	float:left;
 	
 }
