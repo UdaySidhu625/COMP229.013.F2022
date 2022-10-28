@@ -1,0 +1,50 @@
+<%- include('../partials/header')%>
+
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+        <h1><%= title %></h1>
+        <br>
+        <div style="margin-left:710px;margin-top: 10px;">
+            <a href="/businessCon/add" class="btn btn-primary align-self-end" role="button">
+                <i class="fas fa-plus-circle"></i> 
+                Add New Item
+            </a>                
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr>
+                    <th class="text-center">Last Name</th>
+                    <th class="text-center">First Name</th>
+                   
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center" colspan="2">Actions</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let count = 0; count < List.length; count++) { %>
+                    <tr>
+                        <td class="text-center"><%= List[count].lastName %></td>
+                        <td class="text-center"><%= List[count].firstName %></td>
+                        <td class="text-center"><%= List[count].email %></td>
+                        <td class="text-center"><%= List[count].phone %></td>
+                                               <td class="text-center">
+                            <a href="/businessCon/edit/<%= List[count]._id %>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-pencil-alt">Edit</i></a>
+                        </td>
+                        <td class="text-center">
+                            <a href="/businessCon/delete/<%= List[count]._id %>" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt">Delete</i></a>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+  </main>
+  <%- include('../partials/footer')%>
