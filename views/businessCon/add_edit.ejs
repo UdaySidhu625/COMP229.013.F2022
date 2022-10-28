@@ -1,0 +1,75 @@
+<%- include('../partials/header')%>
+
+<!-- Content for the Add_Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <input type="hidden"
+                        name="id"
+                        value="<%= item._id %>"
+                    >
+                    <label for="lastNameTxtField">Last Name</label>
+                    <input type="text" class="form-control"
+                        id="lastNameTxtField"
+                        placeholder="Kindly Enter Your Last Name"
+                        name="lastName" 
+                        value="<%= item.lastName %>"
+                        required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="firstNameTxtField">First Name</label>
+                    <input type="text" class="form-control"
+                    id="firstNameTxtField"
+                    placeholder="Kindly Enter Your First Name"
+                    name="firstName" 
+                    value="<%= item.firstName %>"
+                    required>
+                </div>
+             
+                <br />
+                
+                        
+
+                <div class="form-group">
+                    <label for="emailTextField">Email ID</label>
+                    <input type="text" class="form-control"
+                    id="emailTextField"
+                    placeholder="Kindly Enter Your Email Id"
+                    name="email" 
+                    value="<%= item.email %>"
+                    required>
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <label for="phoneTxtField">Phone</label>
+                    <input type="text" class="form-control"
+                    id="phoneTxtField"
+                    placeholder="Enter a status"
+                    name="phone" 
+                    value="<%= item.phone %>"
+                    >
+                </div>    
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> 
+                    Submit
+                </button>
+                
+                <a href="/businessCon/list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> 
+                    Cancel
+                </a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include('../partials/footer')%>
