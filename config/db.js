@@ -1,3 +1,7 @@
+/*
+Author : Uday Sidhu
+Student Id: 301237202
+*/ 
 let atlasDB="mongodb+srv://dbuser:e5W8QNopFbuWlhVA@cluster018.mit4nng.mongodb.net/?retryWrites=true&w=majority"
 
 let mongoose = require('mongoose');

@@ -3,7 +3,7 @@ let router = express.Router();
 let usersController = require('../controllers/user');
 let passport = require('passport');
 
-/* GET users listing. */
+
 router.get('/', function(req, res, next) {  
   res.render('users', { 
     title: 'Users',

@@ -12,23 +12,20 @@ function requireAuth(req, res, next)
     }
     next();
 }
-/* GET users listing. */
+
 
 router.get('/list',requireAuth, businessConController.businessConList);
 
-// Routers for edit
-router.get('/edit/:id',requireAuth, businessConController.displayEditPage);
+
+router.get('/edit/:id([0-9a-fA-F]{24})',requireAuth, businessConController.displayEditPage);
 router.post('/edit/:id',requireAuth, businessConController.processEditPage);
 
 
-/* GET Route for displaying the Add page - CREATE Operation */
 router.get('/add',requireAuth, businessConController.displayAddPage);
 
-/* POST Route for processing the Add page - CREATE Operation */
 router.post('/add',requireAuth, businessConController.processAddPage);
 
 
-// Route for Delete
 router.get('/delete/:id',requireAuth, businessConController.performDelete);
 
 module.exports = router;

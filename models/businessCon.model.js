@@ -1,7 +1,7 @@
 
 let mongoose = require('mongoose');
 
-// Create a model class
+
 let businessConModel = mongoose.Schema(
     {
         lastName: String,

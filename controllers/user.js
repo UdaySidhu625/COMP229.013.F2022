@@ -1,3 +1,7 @@
+/*
+Author : Uday Sidhu
+Student Id: 301237202
+*/ 
 let User = require('../models/users');
 let passport = require('passport');
 
@@ -65,7 +69,7 @@ module.exports.signup = function(req, res, next) {
         let message = getErrorMessage(err);
 
         req.flash('error', message);
-        // return res.redirect('/users/signup');
+        
         return res.render('authentication/signup', {
           title: 'Sign-up Form',
           messages: req.flash('error'),
@@ -83,8 +87,13 @@ module.exports.signup = function(req, res, next) {
 };
 
 module.exports.signout = function(req, res, next) {
-  req.logout();
-  res.redirect('/');
+  req.logout(function(err) {
+    if (err) {
+      return next(err);
+    }
+    res.redirect('/');
+  });
+  
 };
 
 module.exports.signin = function(req, res, next){

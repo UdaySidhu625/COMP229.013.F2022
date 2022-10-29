@@ -1,10 +1,12 @@
-// create a reference to the model
+/*
+Author : Uday Sidhu
+Student Id: 301237202
+*/ 
 let businessCon = require('../models/businessCon.model');
 
 exports.businessConList = function(req, res, next) {  
     
     businessCon.find((err, businessConList) => {
-        // console.log(inventoryList);
         if(err)
         {
             return console.error(err);
@@ -28,7 +30,6 @@ module.exports.displayAddPage = (req, res, next) => {
     })          
 }
 
-///02.add 
 
 module.exports.processAddPage = (req, res, next) => {
     let newItem = businessCon({
@@ -100,8 +101,7 @@ module.exports.processEditPage = (req, res, next) => {
         }
         else
         {
-            // console.log(req.body);
-            // refresh the book list
+            
             res.redirect('/businessCon/list');
         }
     });
