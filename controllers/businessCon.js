@@ -1,9 +1,11 @@
-// create a reference to the model
+/*
+Author : Uday Sidhu
+Student Id: 301237202
+*/ 
 let businessCon = require('../models/businessCon');
 
 module.exports.businessConList = function(req, res, next) {  
     businessCon.find((err, businessConList) => {
-        // console.log(inventoryList);
         if(err)
         {
             return console.error(err);
@@ -29,7 +31,6 @@ module.exports.displayEditPage = (req, res, next) => {
         }
         else
         {
-            //show the edit view
             res.render('businessCon/add_edit', {
                 title: 'Item Edit', 
                 item: itemToEdit
@@ -50,7 +51,6 @@ module.exports.processEditPage = (req, res, next) => {
         phone : req.body.phone
     });
 
-    // console.log(updatedItem);
 
     businessCon.updateOne({_id: id}, updatedItem, (err) => {
         if(err)
@@ -60,7 +60,6 @@ module.exports.processEditPage = (req, res, next) => {
         }
         else
         {
-            // console.log("Working");
             res.redirect('/businessCon/list');
         }
     });
@@ -78,7 +77,6 @@ module.exports.performDelete = (req, res, next) => {
         }
         else
         {
-            // refresh the book list
             res.redirect('/businessCon/list');
         }
     });

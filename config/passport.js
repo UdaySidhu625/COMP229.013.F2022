@@ -1,3 +1,8 @@
+/*
+Author : Uday Sidhu
+Student Id: 301237202
+*/ 
+
 const passport = require('passport');
 
 module.exports = function() {

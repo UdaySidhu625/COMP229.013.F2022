@@ -1,7 +1,7 @@
 <%- include('../partials/header')%>
 
 
-  <!-- Main Content -->
+  
   <main class="container">
     <div class="row">
         <h1><%= title %></h1>
@@ -13,19 +13,18 @@
             </a>                
         </div>
 
-        <div class="table-responsive">
+        <div class="table-responsive" style="background-color:antiquewhite">
             <table class="table table-bordered table-striped table-hover">
-                <!-- Header Row-->
+                
                 <tr>
                     <th class="text-center">Last Name</th>
                     <th class="text-center">First Name</th>
-                   
                     <th class="text-center">Email</th>
                     <th class="text-center">Phone</th>
                     <th class="text-center" colspan="2">Actions</th>
                 </tr>
 
-                <!-- Repeatable Template Row -->
+                
 
                 <% for(let count = 0; count < List.length; count++) { %>
                     <tr>
@@ -35,11 +34,11 @@
                         <td class="text-center"><%= List[count].phone %></td>
                                                <td class="text-center">
                             <a href="/businessCon/edit/<%= List[count]._id %>" class="btn btn-primary btn-sm">
-                            <i class="fas fa-pencil-alt">Edit</i></a>
+                            <i class="fas fa-pencil-alt">Change Info</i></a>
                         </td>
                         <td class="text-center">
                             <a href="/businessCon/delete/<%= List[count]._id %>" class="btn btn-danger btn-sm">
-                            <i class="fas fa-trash-alt">Delete</i></a>
+                            <i class="fas fa-trash-alt">Remove</i></a>
                         </td>
                     </tr>
                 <% } %>
